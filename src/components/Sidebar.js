@@ -14,7 +14,7 @@ export default function Sidebar() {
         Home
       </a>
     </li>
-    <li>
+    <li className="list_item">
       <a href="#">
         <i className="fa fa-briefcase" />
         About
@@ -24,19 +24,19 @@ export default function Sidebar() {
         Pages
       </a>
     </li>
-    <li>
+    <li className="list_item">
       <a href="#">
         <i className="fa fa-link" />
         Portfolio
       </a>
     </li>
-    <li>
+    <li className="list_item">
       <a href="#">
         <i className="fa fa-paperclip" />
         FAQ
       </a>
     </li>
-    <li>
+    <li className="list_item">
       <a href="#">
         <i className="fa fa-paper-plane" />
         Contact
@@ -44,9 +44,9 @@ export default function Sidebar() {
     </li>
   </ul>
   <ul className="list-unstyled CTAs">
-    <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" className="download">Download source</a>
+    <li><a href="" className="download">Download source</a>
     </li>
-    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" className="article">Back to article</a></li>
+    <li><a href="" className="article">Back to article</a></li>
   </ul>
 </nav>
 

@@ -1,18 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/Sidebar';
-import Content from './components/Content';
+import PageContent from './components/PageContent';
+
+
 
 function App() {
-  return (
+ 
+  return (  
     <>
      <div className='wrapper'>
         <Sidebar/>
-        {/* <Content/> */}
+        <PageContent/>
        
     </div>
+    
+    </>
+    
    
-  </>
+    
   );
 }
 

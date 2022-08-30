@@ -3,31 +3,15 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
-import {mainApi} from "../api";
+
 
 export default function() {
   const [show, setShow] = useState(false);
-//   let [user,setUser]=useState({
-//     maNv:"",
-//     name:"",
-//     email:"",
-//     password:"",
-    
-//   });
+ 
   const handleShow = () => setShow(true);
 
-  const  handleClose = async () =>{
-    // await mainApi.post("",user).then((result)=>{
-    //   alert("success");
-
-    // })
-    // .catch((err)=>{
-    //     alert("faild");
-    //     console.log(err);
-    // })
-    
-    setShow(false);
-  } 
+  const  handleClose = async () => setShow(false);
+ 
  
 
 
@@ -49,10 +33,7 @@ export default function() {
               type="number"
               placeholder="1234"
               autoFocus
-              onChange={(e)=>{
-                  setUser({...user,maNv:e.target.value});
-                  console.log(user);
-              }}
+  
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -61,11 +42,7 @@ export default function() {
               type="text"
               placeholder="nguyen van a"
               autoFocus
-              onChange={(e)=>{
-                setUser({...user,name:e.target.value});
-                console.log(user);
-
-              }}
+              
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -74,10 +51,7 @@ export default function() {
               type="email"
               placeholder="example@gm.uit.edu.vn"
               autoFocus
-              onChange={(e)=>{
-                  setUser({...user,email:e.target.value});
-                  
-              }}
+              
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -86,10 +60,7 @@ export default function() {
               type="password"
               placeholder="1234"
               autoFocus
-              onChange={(e)=>{
-                setUser({...user,password:e.target.value});
-                
-            }}
+             
             />
           </Form.Group>
 
